@@ -6,11 +6,9 @@
 [![](https://images.microbadger.com/badges/commit/tecnativa/doodba:latest.svg)](https://microbadger.com/images/tecnativa/doodba:latest "Get your own commit badge on microbadger.com")
 [![](https://images.microbadger.com/badges/license/tecnativa/doodba.svg)](https://microbadger.com/images/tecnativa/doodba "Get your own license badge on microbadger.com")
 
-**Doodba** stands for **Do**cker **Od**oo **Ba**se, and it is a highly opinionated image
-ready to put [Odoo](https://www.odoo.com) inside it, but **without Odoo**.
+**Doodba** significa **Do**cker **Od**oo **Ba**se, y es una imagen de Docker muy estructurada 
+y configurada específicamente para integrar [Odoo](https://www.odoo.com), pero **sin incluir Odoo**.
 
-**Doodba** significa **Do**cker **Od**oo **Ba**se, y es una imagen muy obstinada 
-lista para poner [Odoo](https://www.odoo.com) dentro, pero **sin Odoo**.
 
 ## What?
 
