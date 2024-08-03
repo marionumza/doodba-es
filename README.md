@@ -9,6 +9,9 @@
 **Doodba** stands for **Do**cker **Od**oo **Ba**se, and it is a highly opinionated image
 ready to put [Odoo](https://www.odoo.com) inside it, but **without Odoo**.
 
+**Doodba** significa **Do**cker **Od**oo **Ba**se, y es una imagen muy obstinada 
+lista para poner [Odoo](https://www.odoo.com) dentro, pero **sin Odoo**.
+
 ## What?
 
 Yes, the purpose of this is to serve as a base for you to build your own Odoo project,
