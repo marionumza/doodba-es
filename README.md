@@ -20,15 +20,15 @@ Por cierto, usamos [Debian][]. Espero que te guste.
 
 [debian]: https://debian.org/
 
+## ¿Por qué Doodba?
 
-## Why?
+Porque desarrollar Odoo es complicado. Necesitas muchas personalizaciones, dependencias y, 
+si deseas cambiar de una versión a otra, es un dolor de cabeza.
 
-Because developing Odoo is hard. You need lots of customizations, dependencies, and if
-you want to move from one version to another, it's a pain.
+Además, nadie utiliza Odoo tal como viene de origen, lo más probable es que necesites 
+añadir parches personalizados y addons. Por eso, necesitamos una forma de integrar 
+todo esto y hacerlo funcionar en cualquier lugar rápidamente.
 
-Also because nobody wants Odoo as it comes from upstream, you most likely will need to
-add custom patches and addons, at least, so we need a way to put all together and make
-it work anywhere quickly.
 
 ## How?
 
@@ -79,6 +79,60 @@ You can start working with this straight away with our [template][].
   - [How can I pin an image version?](#how-can-i-pin-an-image-version)
   - [How can I help?](#how-can-i-help)
 - [Related Projects](#related-projects)
+
+<!-- tocstop -->
+
+<!-- prettier-ignore-end -->
+
+## ¿Cómo?
+
+Puedes empezar a trabajar con esto de inmediato utilizando nuestra [plantilla][].
+
+<!-- prettier-ignore-start -->
+<!-- prettier-ignore -->
+
+<!-- toc -->
+
+- [Uso de la imagen](#uso-de-la-imagen)
+  - [`/opt/odoo/custom`: La importante](#optodoocustom-la-importante)
+    - [`/opt/odoo/custom/entrypoint.d`](#optodoocustomentrypointd)
+    - [`/opt/odoo/custom/build.d`](#optodoocustombuildd)
+    - [`/opt/odoo/custom/conf.d`](#optodoocustomconfd)
+    - [`/opt/odoo/custom/ssh`](#optodoocustomssh)
+    - [`/opt/odoo/custom/src`](#optodoocustomsrc)
+      - [`/opt/odoo/custom/src/odoo`](#optodoocustomsrcodoo)
+      - [`/opt/odoo/custom/src/private`](#optodoocustomsrcprivate)
+      - [`/opt/odoo/custom/src/repos.yaml`](#optodoocustomsrcreposyaml)
+        - [Descarga automática de repos](#descarga-automática-de-repos)
+      - [`/opt/odoo/custom/src/addons.yaml`](#optodoocustomsrcaddonsyaml)
+      - [`/opt/odoo/custom/dependencies/*.txt`](#optodoocustomdependenciestxt)
+  - [`/opt/odoo/common`: La útil](#optodoocommon-la-útil)
+  - [`/opt/odoo/auto`: La automática](#optodooauto-la-automática)
+    - [`/opt/odoo/auto/addons`](#optodooautoaddons)
+    - [`/opt/odoo/auto/odoo.conf`](#optodooautoodooconf)
+- [El `Dockerfile`](#el-dockerfile)
+- [Herramientas incluidas](#herramientas-incluidas)
+  - [`addons`](#addons)
+  - [`click-odoo` y scripts relacionados](#click-odoo-y-scripts-relacionados)
+  - [`nano`](#nano)
+  - [`log`](#log)
+  - [`pot`](#pot)
+  - [`psql`](#psql)
+  - [`inotify`](#inotify)
+  - [`debugpy`](#debugpy)
+  - [`pudb`](#pudb)
+  - [`git-aggregator`](#git-aggregator)
+  - [`autoaggregate`](#autoaggregate)
+    - [Ejemplo de archivo `repos.yaml`](#ejemplo-de-archivo-reposyaml)
+  - [`odoo`](#odoo)
+- [Plantilla de subproyecto](#plantilla-de-subproyecto)
+- [Preguntas Frecuentes](#preguntas-frecuentes)
+  - [¿Habrá cambios no retrocompatibles en la imagen?](#habrá-cambios-no-retrocompatibles-en-la-imagen)
+  - [Este proyecto es demasiado opinado, pero ¿puedo cuestionar alguna de esas opiniones?](#este-proyecto-es-demasiado-opinado-pero-puedo-cuestionar-alguna-de-esas-opiniones)
+  - [¿Qué es esta carpeta `hooks` aquí?](#qué-es-esta-carpeta-hooks-aquí)
+  - [¿Cómo puedo fijar una versión de la imagen?](#cómo-puedo-fijar-una-versión-de-la-imagen)
+  - [¿Cómo puedo ayudar?](#cómo-puedo-ayudar)
+- [Proyectos relacionados](#proyectos-relacionados)
 
 <!-- tocstop -->
 
