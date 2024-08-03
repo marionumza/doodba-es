@@ -9,17 +9,17 @@
 **Doodba** significa **Do**cker **Od**oo **Ba**se, y es una imagen de Docker muy estructurada 
 y configurada específicamente para integrar [Odoo](https://www.odoo.com), pero **sin incluir Odoo**.
 
+## ¿Qué es Doodba?
 
-## What?
+Sí, el propósito de Doodba es servir como una base para que puedas construir tu propio proyecto de Odoo, 
+ya que la mayoría de ellos terminan requiriendo una gran cantidad de parches personalizados, fusiones 
+y repositorios adicionales. Con esta imagen, tienes una colección de buenas prácticas y herramientas 
+que permiten a tu equipo mantener una estructura estándar para proyectos de Odoo.
 
-Yes, the purpose of this is to serve as a base for you to build your own Odoo project,
-because most of them end up requiring a big amount of custom patches, merges,
-repositories, etc. With this image, you have a collection of good practices and tools to
-enable your team to have a standard Odoo project structure.
-
-BTW, we use [Debian][]. I hope you like that.
+Por cierto, usamos [Debian][]. Espero que te guste.
 
 [debian]: https://debian.org/
+
 
 ## Why?
 
